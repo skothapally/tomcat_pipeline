@@ -1,0 +1,21 @@
+pipeline {
+   agent any
+
+   tools {
+      maven "maven"
+      jdk "jdk 8"
+                
+   }
+
+   stages {
+      stage('Build') {
+         steps {
+    
+            git 'https://github.com/sidvijay18/tomcat_pipeline.git'
+
+             bat "mvn package"
+         }
+
+      }
+   }
+}
