@@ -9,7 +9,7 @@ pipeline {
    }
 
    stages {
-      stage('Build') {
+      stage('Build123') {
          steps {
             // Get some code from a GitHub repository
             git 'https://github.com/sidvijay18/tomcat_pipeline.git'
