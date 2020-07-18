@@ -9,21 +9,24 @@ pipeline {
    }
 
    stages {
-      stage('Build') {
+      stage('Code Checkout') {
          steps {
             // Get some code from a GitHub repository
-            git 'https://github.com/sidvijay18/tomcat_pipeline.git'
+            git 'https://github.com/sidvijay18/tomcat_pipeline.git'   
+         }
 
-            // Run Maven on a Unix agent.
-            //sh "mvn -Dmaven.test.failure.ignore=true clean package"
-
+      }
+      
+      stage(' Code Build') {
+         steps {
+           
             // To run Maven on a Windows agent, use
            bat "mvn package"
          }
 
       }
       
-      stage('Deployment') {
+      stage('Code Deploy') {
          steps {
         
             // To run Maven on a Windows agent, use
