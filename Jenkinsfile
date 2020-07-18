@@ -17,6 +17,15 @@ pipeline {
 
       }
       
+      stage(' Code Testing') {
+         steps {
+           
+            // add sample junit test cases
+          
+         }
+
+      }
+      
       stage(' Code Build') {
          steps {
            
