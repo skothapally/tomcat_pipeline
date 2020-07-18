@@ -20,8 +20,7 @@ pipeline {
       stage(' Code Testing') {
          steps {
            
-            // add sample junit test cases
-          
+           echo 'Add sample Junit test cases for your code'
          }
 
       }
