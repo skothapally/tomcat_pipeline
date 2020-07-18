@@ -20,7 +20,7 @@ pipeline {
       stage(' Code Testing') {
          steps {
            
-           echo 'Add sample Junit test cases for your code'
+            bat "mvn test"
          }
 
       }
