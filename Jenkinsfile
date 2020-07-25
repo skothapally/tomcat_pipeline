@@ -17,13 +17,6 @@ pipeline {
 
       }
       
-      stage(' Code Testing') {
-         steps {
-           
-            bat "mvn test"
-         }
-
-      }
       
       stage(' Code Build') {
          steps {
