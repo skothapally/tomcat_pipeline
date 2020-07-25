@@ -3,7 +3,7 @@ pipeline {
 
    tools {
       // Install the Maven version configured as "M3" and add it to the path. Demo comment
-      maven "mave"
+      maven "maven"
       jdk "java"
                 
    }
@@ -12,7 +12,7 @@ pipeline {
       stage('Code Checkout') {
          steps {
             // Get some code from a GitHub repository
-            git 'https://github.com/sidvijay18/tomcat_pipeline.git'   
+            git 'https://github.com//tomcat_pipeline.git'   
          }
 
       }
