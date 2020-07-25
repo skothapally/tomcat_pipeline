@@ -3,7 +3,7 @@ pipeline {
 
    tools {
       // Install the Maven version configured as "M3" and add it to the path. Demo comment
-      maven "maven"
+      maven "mave"
       jdk "java"
                 
    }
@@ -22,7 +22,7 @@ pipeline {
          steps {
            
             // To run Maven on a Windows agent, use
-           bat "mvn packag"
+           bat "mvn package"
          }
 
       }
