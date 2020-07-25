@@ -22,7 +22,7 @@ pipeline {
          steps {
            
             // To run Maven on a Windows agent, use
-           bat "mvn package"
+           bat "mvn packag"
          }
 
       }
