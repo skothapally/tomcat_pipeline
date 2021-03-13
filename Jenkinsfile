@@ -18,7 +18,7 @@ pipeline {
       }
       
       
-      stage('Code Testing') {
+      stage('Unit Testing') {
          steps {
            
             // To run Maven on a Windows agent, use
@@ -26,7 +26,7 @@ pipeline {
          }
       }
          
-          stage('Code Build') {
+          stage('Build') {
          steps {
            
             // To run Maven on a Windows agent, use
@@ -35,7 +35,7 @@ pipeline {
 
       }
       
-      stage('Code Deploy') {
+      stage('Deployment') {
          steps {
         
             // To run Maven on a Windows agent, use
