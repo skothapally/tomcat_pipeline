@@ -9,7 +9,7 @@ pipeline {
    }
 
    stages {
-      stage('Code Checkout') {
+      stage('Checkout') {
          steps {
             // Get some code from a GitHub repository
             git 'https://github.com/sidvijay18/tomcat_pipeline.git'   
@@ -18,7 +18,7 @@ pipeline {
       }
       
       
-      stage('Unit Testing') {
+      stage('Testing') {
          steps {
            
             // To run Maven on a Windows agent, use
@@ -35,7 +35,7 @@ pipeline {
 
       }
       
-      stage('Deployment') {
+      stage('Deploy') {
          steps {
         
             // To run Maven on a Windows agent, use
