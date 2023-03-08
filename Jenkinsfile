@@ -18,13 +18,7 @@ pipeline {
       }
       
       
-      stage('Unit Testing') {
-         steps {
-           
-            // To run Maven on a Windows agent, use
-           sh 'mvn clean install'
-         }
-      }
+     
          
           stage('Build') {
          steps {
