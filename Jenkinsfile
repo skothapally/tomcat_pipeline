@@ -22,7 +22,7 @@ pipeline {
          steps {
            
             // To run Maven on a Windows agent, use
-           bat "mvn test"
+           sh 'mvn clean install'
          }
       }
          
@@ -30,7 +30,7 @@ pipeline {
          steps {
            
             // To run Maven on a Windows agent, use
-           bat "mvn package"
+           sh 'mvn package'
          }
 
       }
