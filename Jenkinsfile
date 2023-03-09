@@ -33,7 +33,7 @@ pipeline {
          steps {
         
             // To run Maven on a Windows agent, use
-          sh 'cp -rf /var/lib/jenkins/workspace/pipeline/target/test-1.0.war /opt/apache-tomcat-9.0.33/webapps'
+          sh 'sudo cp -rf /var/lib/jenkins/workspace/pipeline/target/test-1.0.war /opt/apache-tomcat-9.0.33/webapps'
             }
 
       }
