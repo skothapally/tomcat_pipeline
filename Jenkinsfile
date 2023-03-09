@@ -23,7 +23,7 @@ pipeline {
           stage('Build') {
          steps {
            
-            // To run Maven on a Windows agent, use
+        
            sh 'mvn package'
          }
 
@@ -32,8 +32,8 @@ pipeline {
      stage(' Code Deploy') {
          steps {
         
-            // To run Maven on a Windows agent, use
-          sh 'sudo cp -rf /var/lib/jenkins/workspace/pipeline/target/test-1.0.war /opt/apache-tomcat-9.0.33/webapps'
+           
+          sh 'cp -rf /var/lib/jenkins/workspace/pipeline/target/test-1.0.war /opt/apache-tomcat-9.0.33/webapps'
             }
 
       }
