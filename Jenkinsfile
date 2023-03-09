@@ -29,13 +29,13 @@ pipeline {
 
       }
       
-     // stage(' Code Deploy') {
-       //  steps {
+     stage(' Code Deploy') {
+         steps {
         
             // To run Maven on a Windows agent, use
-         //  bat label: '', script: 'copy /Y target\\test-1.0.war E:\\apache-tomcat-9.0.16-windows-x64\\apache-tomcat-9.0.16\\webapps'
-         //}
+          sh 'cp /var/lib/jenkins/workspace/pipeline/target/test-1.0.war /opt/apache-tomcat-9.0.33/webapps'
+            }
 
-      //}
+      }
    }
 }
