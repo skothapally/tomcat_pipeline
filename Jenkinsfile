@@ -33,7 +33,7 @@ pipeline {
          steps {
         
            
-          sh 'cp -rf /var/lib/jenkins/workspace/pipeline/target/test-1.0.war /opt/apache-tomcat-9.0.33/webapps'
+          sh 'cp -rf target/test-1.0.war /opt/apache-tomcat-9.0.80/webapps'
             }
 
       }
