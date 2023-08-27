@@ -23,7 +23,7 @@ pipeline {
         
            sh 'mvn test'
          }
-     
+       }
          
           stage('Code Build') {
          steps {
