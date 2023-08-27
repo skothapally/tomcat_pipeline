@@ -9,7 +9,7 @@ pipeline {
   // }
 
    stages {
-      stage('Checkout') {
+      stage(' Code Checkout') {
          steps {
             // Get some code from a GitHub repository
             git 'https://github.com/sidvijay18/tomcat_pipeline.git'   
@@ -17,10 +17,15 @@ pipeline {
 
       }
       
-      
+       stage('Code Testing') {
+         steps {
+           
+        
+           sh 'mvn test'
+         }
      
          
-          stage('Build') {
+          stage('Code Build') {
          steps {
            
         
